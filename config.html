@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/config.css">
+    <title>Configuration Page</title>
+</head>
+<body>
+    <div class="nav">
+        <button class="home">Home</button>
+        <div class="nav-right">
+            <button class="logout">Logout</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Configuration Page</h1>
+        <form id="config-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <input type="text" id="comment" name="comment">
+            </div>
+            <div>
+                <label for="site">Site:</label>
+                <input type="text" id="site" name="site">
+            </div>
+            <div>
+                <label for="start-date">Start Date:</label>
+                <input type="text" id="start-date" name="start-date">
+            </div>
+            <div>
+                <label for="pet-enabled">Pet Enabled:</label>
+                <input type="text" id="pet-enabled" name="pet-enabled">
+            </div>
+            <div>
+                <label for="family-review-enabled">Family Review Enabled:</label>
+                <input type="text" id="family-review-enabled" name="family-review-enabled">
+            </div>
+            <div>
+                <label for="last-review-date">Last Review Date:</label>
+                <input type="text" id="last-review-date" name="last-review-date">
+            </div>
+            <div>
+                <label for="credits">Credits:</label>
+                <input type="text" id="credits" name="credits">
+            </div>
+            <div>
+                <label for="steps-per-level">Steps Per Level:</label>
+                <input type="text" id="steps-per-level" name="steps-per-level">
+            </div>
+            <div>
+                <label for="steps-per-point">Steps Per Point:</label>
+                <input type="text" id="steps-per-point" name="steps-per-point">
+            </div>
+            <div>
+                <label for="points-per-days-worn">Points Per Days Worn:</label>
+                <input type="text" id="points-per-days-worn" name="points-per-days-worn">
+            </div>
+            <div>
+                <label for="leadboard-opt-in">LeadBoard Opt-In:</label>
+                <input type="text" id="leadboard-opt-in" name="leadboard-opt-in">
+            </div>
+            <div>
+                <label for="update-account-allowed">Update Account Allowed:</label>
+                <input type="text" id="update-account-allowed" name="update-account-allowed">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <hr class="separator">
+        <h2>Members</h2>
+        <div class="members-section">
+            <form id="members-form">
+                <div>
+                    <label for="member-id">ID:</label>
+                    <input type="text" id="member-id" name="member-id">
+                </div>
+                <div>
+                    <label for="member-name">Name:</label>
+                    <input type="text" id="member-name" name="member-name">
+                </div>
+                <div>
+                    <label for="member-phone">Phone:</label>
+                    <input type="text" id="member-phone" name="member-phone">
+                </div>
+                <div>
+                    <label for="member-comment">Comment:</label>
+                    <input type="text" id="member-comment" name="member-comment">
+                </div>
+                <div>
+                    <label for="member-step-goal">Step Goal:</label>
+                    <input type="text" id="member-step-goal" name="member-step-goal">
+                </div>
+                <div>
+                    <label for="member-child">Child:</label>
+                    <input type="text" id="member-child" name="member-child">
+                </div>
+            <div class="button-container">
+                <button type="submit" class="submit-btn">Add Member</button>
+                <button type="button" class="submit-btn view">View</button>
+            </div>
+            </form>
+            <ul id="members-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
